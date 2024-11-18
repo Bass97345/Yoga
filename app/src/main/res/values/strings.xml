@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">yoga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="HelloText">Наслаждайся отборочными.\nБудь внимателен.\nДелай хорошо.</string>
+    <string name="bannerText">Кратенькое описание\nблока с двумя строчками</string>
+</resources>
