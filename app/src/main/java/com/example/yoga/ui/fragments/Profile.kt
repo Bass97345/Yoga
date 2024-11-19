@@ -138,10 +138,21 @@ class Profile : Fragment(R.layout.fragment_profile) {
         ImagenAdapter.onItemClick = { uri ->
             uri?.let {
                 val bundle = Bundle().apply {
-                    putString("photo_uri", it.toString()) // Передаем URI выбранной фотографии
+                    putString("photo_uri", it.toString())
                 }
                 findNavController().navigate(R.id.action_profile_to_bigPhoto2, bundle)
             }
+        }
+
+        lifecycleScope.launchWhenStarted {
+            findNavController().currentBackStackEntry?.savedStateHandle?.getLiveData<String>("photo_deleted")
+                ?.observe(viewLifecycleOwner) { deletedUri ->
+                    deletedUri?.let {
+                        val uri = Uri.parse(it)
+                        banner.remove(uri)
+                        ImagenAdapter.notifyDataSetChanged()
+                    }
+                }
         }
 
 

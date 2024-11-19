@@ -16,10 +16,10 @@
         android:src="@drawable/hamburger"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.069" />
 
     <ImageView
         android:id="@+id/imageView6"
@@ -30,42 +30,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.085" />
+        app:layout_constraintVertical_bias="0.055" />
 
     <TextView
         android:id="@+id/exitButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
         android:fontFamily="@font/alegreya_sans_medium"
         android:text="exit"
         android:textColor="@color/white"
         android:textSize="20dp"
-        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <androidx.constraintlayout.utils.widget.ImageFilterView
         android:id="@+id/Avatar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:roundPercent="1"
+        android:maxWidth="100dp"
 
-        android:maxWidth="140dp"
-        android:maxHeight="140dp"
+        android:maxHeight="100dp"
         android:minWidth="100dp"
         android:minHeight="100dp"
-
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.213"
-        />
+        app:layout_constraintVertical_bias="0.161"
+        app:roundPercent="1" />
 
     <TextView
         android:id="@+id/ProfileName"
